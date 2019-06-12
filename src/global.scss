@@ -1,0 +1,79 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+ion-content {
+  --background: none;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: auto;
+
+
+}
+.ion-color-bleuclair {
+  --ion-color-base: var(--ion-color-bleuclair) !important;
+  --ion-color-base-rgb: var(--ion-color-bleuclair-rgb) !important;
+  --ion-color-contrast: var(--ion-color-bleuclair-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-bleuclair-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-bleuclair-shade) !important;
+  --ion-color-tint: var(--ion-color-bleuclair-tint) !important;
+}
+.ion-color-bleufonce {
+  --ion-color-base: var(--ion-color-bleufonce) !important;
+  --ion-color-base-rgb: var(--ion-color-bleufonce-rgb) !important;
+  --ion-color-contrast: var(--ion-color-bleufonce-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-bleufonce-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-bleufonce-shade) !important;
+  --ion-color-tint: var(--ion-color-bleufonce-tint) !important;
+}
+.ion-color-violett {
+  --ion-color-base: var(--ion-color-violett) !important;
+  --ion-color-base-rgb: var(--ion-color-violett-rgb) !important;
+  --ion-color-contrast: var(--ion-color-violett-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-violett-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-violett-shade) !important;
+  --ion-color-tint: var(--ion-color-violett-tint) !important;
+}
+.ion-color-noir {
+  --ion-color-base: var(--ion-color-noir) !important;
+  --ion-color-base-rgb: var(--ion-color-noir-rgb) !important;
+  --ion-color-contrast: var(--ion-color-noir-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-noir-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-noir-shade) !important;
+  --ion-color-tint: var(--ion-color-noir-tint) !important;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.demo-non-form {
+  color: initial;
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  font-family: arial, verdana, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+.external-container button.external-button {
+  font-weight: 400;
+  padding: 10px;
+  margin: 6px 0 13px 0;
+  width: 100%;
+}

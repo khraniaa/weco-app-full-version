@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="bleuclair">
+    <ion-title>Proposer un trajet</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content padding style="background: white;">
+     Lieu de départ: <ion-searchbar placeholder="Exemple: Lyon-Part Dieu, Gare-perrache"></ion-searchbar>
+    Lieu d'arrivé: <ion-searchbar animated placeholder="Exemple: Lyon-Part Dieu, Gare-perrache"></ion-searchbar>
+    <mbsc-form-group  style="background: white;">
+   Date <mbsc-calendar [(ngModel)]="calendarCenter" [options]="calendarCenterSettings" placeholder="Choisiez votre date"></mbsc-calendar>
+    </mbsc-form-group>
+    Départ à <ion-datetime style=" border-bottom: 1px solid #6d6d6d;width: 98.5%;" placeholder="Choisiez votre heure de départ" display-format="HH : mm "></ion-datetime>
+    <br>
+    Nombre des personnes: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <ion-icon (click)="decrement()" style="" name="remove-circle" color="bleuclair"></ion-icon> {{currentNumber}}
+    <ion-icon (click)="increment()"  style="" name="add-circle" color="bleuclair"></ion-icon><br><br>
+    Aller simple &nbsp; <ion-checkbox color="bleuclair"></ion-checkbox>&nbsp; &nbsp;
+      Aller-retour &nbsp; <ion-checkbox color="bleuclair"></ion-checkbox><br>
+    Maximum 2 à l'arrière &nbsp; <ion-checkbox color="bleuclair"></ion-checkbox><br>
+    Voyager entre femmes &nbsp; <ion-checkbox color="bleuclair"></ion-checkbox><br>
+    <ion-button size="small" style="float: right; " routerLink="/villes-etape" color="bleuclair"> Suivant</ion-button>
+  </ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button routerLink="/home" tab="home">
+    <ion-label>Accueil</ion-label>
+    <ion-icon name="home" color="bleuclair"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/profil" tab="person">
+    <ion-icon name="person" color="bleufonce"></ion-icon>
+    <ion-label>Profil</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="text">
+    <ion-icon name="text" color="violett"></ion-icon>
+    <ion-label>Message</ion-label>
+    <ion-badge>4</ion-badge>
+  </ion-tab-button>
+
+  <ion-tab-button tab="filing">
+    <ion-icon name="filing" color="noir"></ion-icon>
+    <ion-label>Historique</ion-label>
+  </ion-tab-button>
+  <ion-tab-button (click)="logout()" tab="log-out">
+    <ion-icon name="log-out"></ion-icon>
+    <ion-label>Déconnexion</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

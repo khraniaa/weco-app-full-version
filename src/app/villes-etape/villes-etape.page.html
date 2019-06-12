@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="bleuclair">
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/proposer-trajet"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Villes étape</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding style="background: none;">
+  <div style="display: inline-block">
+  <ion-input type="text" placeholder="Ajouter une ville"></ion-input>
+  <ion-button color="bleuclair" size="small"> Ajouter </ion-button>
+  </div>
+  <p><strong>Options</strong></p>
+  <p>Eviter les autoroutes &nbsp;<ion-checkbox color="bleuclair"></ion-checkbox></p>
+  <p>Eviter les péages &nbsp;<ion-checkbox color="bleuclair"></ion-checkbox></p>
+  <p>Eviter les les péripheriques &nbsp;<ion-checkbox color="bleuclair"></ion-checkbox></p>
+  <ion-button size ="small" style="float: right; " routerLink="/publier-trajet" color="bleuclair"> Suivant</ion-button>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button routerLink="/home" tab="home">
+    <ion-label>Accueil</ion-label>
+    <ion-icon name="home" color="bleuclair"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/profil" tab="person">
+    <ion-icon name="person" color="bleufonce"></ion-icon>
+    <ion-label>Profil</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="text">
+    <ion-icon name="text" color="violett"></ion-icon>
+    <ion-label>Message</ion-label>
+    <ion-badge>4</ion-badge>
+  </ion-tab-button>
+
+  <ion-tab-button tab="filing">
+    <ion-icon name="filing" color="noir"></ion-icon>
+    <ion-label>Historique</ion-label>
+  </ion-tab-button>
+  <ion-tab-button (click)="logout()" tab="log-out">
+    <ion-icon name="log-out"></ion-icon>
+    <ion-label>Déconnexion</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

@@ -1,0 +1,7 @@
+{
+  "name": "monprojetionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
