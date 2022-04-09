@@ -58,7 +58,7 @@
         "geofire": "^5.0.1",
         "google-libphonenumber": "^3.2.2",
         "ionic2-calendar": "^0.5.2",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "places.js": "^1.16.4",
         "rxjs": "~6.5.1",
         "rxjs-compat": "^6.5.2",
